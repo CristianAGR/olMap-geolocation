@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcial01 Examen</title>
+  </head>
+  <body>
+    <div id="mi-popup" style="display: none;">
+      Contenido del popup
+   </div>
+    <h1 id="title">Delivery Zone</h1>
+    <form id="formSection">
+    <p>Ingrese su Nombre</p>
+    <label for="name">Nombre:</label>
+    <input type="text" placeholder="Nombre:" value="" id="name" name="nombreInput" required/>
+    <br/>
+    <p>Ingrese su Ubicación</p>
+    <label for="latitude">Latitud:</label>
+    <input type="text" placeholder="Latitud:" id="latitude" name="latitudInput" required/>
+    <label for="longitude">Longitud:</label>
+    <input type="text" placeholder="Longitud:" id="longitude" name="longitudInput" required/>
+    <br/>
+    <button type="submit">Enviar</button>
+    </form>
+    <p style="left: 15%; position: relative;" id="showName" >Mapa ilustrativo</p>
+    <div id="map" class="map"></div>
+    <script src="https://cdn.jsdelivr.net/npm/elm-pep@1.0.6/dist/elm-pep.js"></script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
